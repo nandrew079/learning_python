@@ -1,20 +1,20 @@
 def num_translate(str_number):
     dict_numbers = {
-        'один': 'one',
-        'два': 'two',
-        'три': 'three',
-        'четыре': 'four',
-        'пять': 'five',
-        'шесть': 'six',
-        'семь': 'seven',
-        'восемь': 'eight',
-        'девять': 'nine',
-        'десять': 'ten',
+        'one': 'один',
+        'two': 'два',
+        'three': 'три',
+        'four': 'четыре',
+        'five': 'пять',
+        'six': 'шесть',
+        'seven': 'семь',
+        'eight': 'восемь',
+        'nine': 'девять',
+        'ten': 'десять',
     }
     return dict_numbers.get(str_number)
 
 
-print(num_translate('один'))
-print(num_translate('восемь'))
-print(num_translate('двадцать'))
+print(num_translate('one'))
+print(num_translate('eight'))
+print(num_translate('twenty'))
 print(num_translate(''))
