@@ -15,7 +15,7 @@ def num_translate_adv(str_number):
 
     if str_number.istitle():
         result = dict_numbers.get(str_number.lower())
-        if result != None:
+        if not(result is None):
             result = result.title()
     else:
         result = dict_numbers.get(str_number.lower())
