@@ -44,9 +44,8 @@ def get_unique_word(list_words, used_list):
     """
     word = ''
     if len(list_words) != len(used_list):
-        word = choice(list_words)
-        while used_list.count(word) != 0:
-            word = choice(list_words)
+        list_rest = list(set(list_words) - set(used_list))
+        word = choice(list_rest)
         used_list.append(word)
 
     return word
