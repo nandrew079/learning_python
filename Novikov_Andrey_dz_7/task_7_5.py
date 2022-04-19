@@ -1,6 +1,5 @@
 import os
 import sys
-import pprint
 
 
 def get_multiplicity_10(size_f, num):
